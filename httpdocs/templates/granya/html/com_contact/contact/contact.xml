@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="contact" addrulepath="components/com_contact/models/rules" label="COM_CONTACT_FORM_LABEL">
+		<field name="contact_name"
+			type="text"
+			id="contact-name"
+			size="30"
+			description="COM_CONTACT_CONTACT_EMAIL_NAME_DESC"
+			label="COM_CONTACT_CONTACT_EMAIL_NAME_LABEL"
+			filter="string"
+			required="true"
+            class="inputbox"
+		/>
+		<field name="contact_email"
+			type="email"
+			id="contact-email"
+			size="30"
+			description="COM_CONTACT_EMAIL_DESC"
+			label="COM_CONTACT_EMAIL_LABEL"
+			filter="string"
+			validate="contactemail"
+            class="email inputbox"
+			required="true"
+		/>
+		<field name="contact_phone"
+			type="text"
+			id="contact-phone"
+			description="COM_CONTACT_CONTACT_PHONE_DESC"
+			label="COM_CONTACT_CONTACT_PHONE_LABEL"
+			filter="string"
+			required="true"
+            class="inputbox"
+            size="30"
+		/>
+		<field name="contact_country"
+               type="sql"
+               label="COM_CONTACT_CONTACT_COUNTRY_LABEL"
+               description="COM_CONTACT_CONTACT_COUNTRY_DESC"
+               query="SELECT id, name FROM #__countries"
+               key_field="id" value_field="name"
+               default="" required="true">
+               <option selected="selected" value="">COM_CONTACT_FIELD_SELECT_DEFAULT</option>
+	           <option value="234">Venezuela</option>
+	           <option value="64">Estados Unidos</option>
+			   <option value="—————————————" disabled="disabled">—————————————</option>
+        </field>
+		<field name="contact_city"
+			type="text"
+			size="30"
+			id="contact-city"
+			description="COM_CONTACT_CONTACT_CITY_DESC"
+			label="COM_CONTACT_CONTACT_CITY_LABEL"
+			filter="string"
+			required="true"
+            class="inputbox"
+		/>
+		<field name="contact_skype"
+			type="text"
+			size="30"
+			id="contact-skype"
+			description="COM_CONTACT_CONTACT_SKYPE_DESC"
+			label="COM_CONTACT_CONTACT_SKYPE_LABEL"
+			filter="string"
+			required="false"
+            class="inputbox"
+		/>
+		<field name="contact_subject"
+			type="text"
+			id="contact-emailmsg"
+			size="60"
+			description="COM_CONTACT_CONTACT_MESSAGE_SUBJECT_DESC"
+			label="COM_CONTACT_CONTACT_MESSAGE_SUBJECT_LABEL"
+			filter="string"
+			validate="contactemailsubject"
+			required="true"
+            class="inputbox"
+		/>
+		<field name="contact_message"
+			type="textarea"
+			cols="50"
+			rows="10"
+			id="contact-message"
+			description="COM_CONTACT_CONTACT_ENTER_MESSAGE_DESC"
+			label="COM_CONTACT_CONTACT_ENTER_MESSAGE_LABEL"
+			filter="htmlsafe"
+			validate="contactemailmessage"
+			required="true"
+            class="required inputbox"
+		/>
+		<field name="contact_email_copy"
+			type="checkbox"
+			id="contact-email-copy"
+			description="COM_CONTACT_CONTACT_EMAIL_A_COPY_DESC"
+			label="COM_CONTACT_CONTACT_EMAIL_A_COPY_LABEL"
+			default="0" class="inputbox"
+		/>
+        <field name="contact_category"
+               type="list"
+               label="COM_CONTACT_CONTACT_CATEGORY_FIELD"
+               description="COM_CONTACT_CONTACT_CATEGORY_FIELD_DESC"
+               class="inputbox"
+               size="1"
+               default="" required="true" filter="integer">
+            <option value="">COM_CONTACT_FIELD_SELECT_DEFAULT</option>
+            <option value="1">COM_CONTACT_CATEGORY_INFOTALLERES</option>
+            <option value="2">COM_CONTACT_CATEGORY_INFOESTETICA</option>
+            <option value="3">COM_CONTACT_CATEGORY_PROBLEMA</option>
+            <option value="5">COM_CONTACT_CATEGORY_REFUERZO</option>
+            <option value="4">COM_CONTACT_CATEGORY_OTROS</option>
+        </field>
+
+	</fieldset>
+	<fieldset name="captcha">
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_CONTACT_CAPTCHA_LABEL"
+			description="COM_CONTACT_CAPTCHA_DESC"
+			validate="captcha"
+			namespace="contact"
+		/>
+	</fieldset>
+</form>

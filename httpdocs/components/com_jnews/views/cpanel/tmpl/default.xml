@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="jNews">
+  <message>jNews Control Panel for frontend management. If the user is just a visitor or logged in and doesn't have the access to create lists and mailings and clicks here, he will be redirected to the exhaustive list of available jNews Lists.</message>
+ </layout>
+ 
+  <url>
+   <param name="act" type="text" default="" label="Action" description=""/>
+  </url>
+  
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jnews">
+   <field name="act" type="text" default="" label="Action" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

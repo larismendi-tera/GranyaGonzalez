@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addrulepath="administrator/components/com_talleres/models/rules">
+        <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+               readonly="true" class="readonly"
+               description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <!-- TALLER -->
+
+        <field name="taller_id" type="sql" default=""
+               label="COM_TALLERES_FIELD_TITLE"
+               query="SELECT id, title FROM #__taller"
+               key_field="id" value_field="title" required="true">
+            <option value="">COM_TALLERES_FIELD_SELECT_DEFAULT</option>
+        </field>
+
+        <!--<field name="taller_id" type="list" class="inputbox"-->
+        <!--size="1" label="COM_TALLERES_FIELD_TITLE"-->
+        <!--description="COM_TALLERES_FIELD_TALLER_ID_DESC" required="true" />-->
+
+        <!-- NUM TRANSACCION -->
+        <field name="num_transaccion" type="text"
+               label="COM_INSCRIPCION_FIELD_NUMERO_TRANSACCION"
+               description="COM_INSCRIPCION_FIELD_NUMERO_TRANSACCION_DESC"
+               class="inputbox"
+               size="40"
+               required="false" />
+               
+         <!-- OBSERVACIONES -->
+        <field name="observaciones" type="textarea"
+               label="COM_INSCRIPCION_FIELD_OBSERVACIONES"
+               description="COM_INSCRIPCION_FIELD_OBSERVACIONES_DESC"
+               class="inputbox"
+
+               rows="6"
+               required="false" />
+
+        <!-- NOMBRE -->
+        <field name="nombre" type="text"
+               label="COM_INSCRIPCION_FIELD_NOMBRE"
+               description="COM_INSCRIPCION_FIELD_NOMBRE_DESC"
+               class="inputbox"
+               size="40"
+               required="true" />
+
+        <!-- CORREO -->
+        <field name="correo" type="email"
+               label="COM_INSCRIPCION_FIELD_EMAIL"
+               description="COM_INSCRIPCION_FIELD_EMAIL_DESC"
+               class="inputbox"
+               size="40"
+               required="true" />
+
+        <!-- CORREO -->
+        <field name="telefono" type="text"
+               label="COM_INSCRIPCION_FIELD_TELEFONO"
+               description="COM_INSCRIPCION_FIELD_TELEFONO_DESC"
+               class="inputbox"
+               size="12"
+               required="true" />
+
+
+        <!-- CIUDAD -->
+        <field name="ciudad" type="text"
+               label="COM_INSCRIPCION_FIELD_CIUDAD"
+               description="COM_INSCRIPCION_FIELD_CIUDAD_DESC"
+               class="inputbox"
+               size="40"
+               required="false" />
+
+        <!-- CEDULA -->
+        <field name="ci" type="text"
+               label="COM_INSCRIPCION_FIELD_CI"
+               description="COM_INSCRIPCION_FIELD_CI_DESC"
+               class="inputbox"
+               size="12"
+               required="true"/>
+
+
+        <!-- GENERO -->
+        <field name="genero"
+               type="list"
+               label="COM_INSCRIPCION_FIELD_GENERO"
+               description="COM_INSCRIPCION_FIELD_GENERO_DESC"
+               class="inputbox"
+               size="1"
+               default="">
+            <option value="">COM_TALLERES_FIELD_SELECT_DEFAULT</option>
+            <option value="1">COM_TALLERES_FIELD_FEMENINO</option>
+            <option value="2">COM_TALLERES_FIELD_MASCULINO</option>
+        </field>
+
+
+        <!-- FORMA DE PAGO -->
+        <field name="forma_pago" type="list" class="inputbox"
+               size="1" label="COM_INSCRIPCION_FIELD_FORMA_PAGO"
+               description="COM_INSCRIPCION_FIELD_FORMA_PAGO_DESC" required="true">
+            <option value="">COM_TALLERES_FIELD_SELECT_DEFAULT</option>
+            <option value="e">COM_TALLERES_FIELD_PAGO_EFECTIVO</option>
+            <option value="d">COM_TALLERES_FIELD_PAGO_DEPOSITO</option>
+            <option value="t">COM_TALLERES_FIELD_PAGO_TRANSFERENCIA</option>
+            <option value="c">COM_TALLERES_FIELD_PAGO_CREDITO</option>
+            <option value="b">COM_TALLERES_FIELD_PAGO_DEBITO</option>
+            <option value="q">COM_TALLERES_FIELD_PAGO_CHEQUE</option>
+        </field>
+
+        <!-- MONTO -->
+        <field name="monto" type="text" class="inputbox validate-numeric" filter="float"
+               size="10" label="COM_INSCRIPCION_FIELD_MONTO"
+               description="COM_INSCRIPCION_FIELD_MONTO_DESC" required="true" />
+
+        <!--<field name="fecha" type="hidden"-->
+               <!--class="inputbox" size="22" format="%Y-%d-%m"-->
+               <!--filter="user_utc" required="true" />-->
+
+        <!-- TIPO DE INSCRIPCION -->
+        <field name="tipo_inscripcion" type="hidden" default="m" required="true" />
+    </fieldset>
+</form>

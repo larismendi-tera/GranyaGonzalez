@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<cbinstall version="1.0" type="plugin" group="user" method="upgrade">
+	<name>jNews CB Plugin</name>
+	<creationDate>April 2012</creationDate>
+	<author>Joobi Limited</author>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>1.8</version>
+	<description>CB plugin for jNews 7.6</description>
+	<files>
+		<filename plugin="jnews_cb">jnews_cb.php</filename>
+		<filename>index.html</filename>
+	</files>
+    <params>
+	</params>
+    <tabs>
+    	<tab name="Mailing lists" description="Listing of all the mailing lists for jNews" class="getjNewsTab" fields="0">
+
+    	<params>
+			<param name="@spacer" type="spacer" default="Parameters to configure the jNews CB Plugin." label="About:" description="" />
+	        <param name="show_archive" type="radio" default="1" label="Show Archive Links" description="Select yes to show a link to the lists archive if the list allows it.">
+	            <option value="0">_UE_NO</option>
+	            <option value="1">_UE_YES</option>
+	        </param>
+	        <param name="public_view" type="radio" default="0" label="Allow Public View" description="Select yes to allow users to see this tab when viewing other users profiles.">
+	            <option value="0">_UE_NO</option>
+	            <option value="1">_UE_YES</option>
+	        </param>
+	  		<param name="jnews_itemid" type="text" default="" label="jNews Link ItemId" description="If left blank will default to the ItemId for community builder menu link.  This causes links to the list archives to lead to archive pages with the same modules shown when viewing a profile and without the modules that would appear if you followed an jnews menu link.  To correct this enter in the ItemId for the menu link to component - jnews. " />
+
+    	</params>
+
+    	<config>
+			<fields name="params">
+				<fieldset name="basic">
+					<field name="@spacer" type="spacer" default="Parameters to configure the jNews CB Plugin." label="About:" description="" />
+	        		<field name="show_archive" type="radio" default="1" label="Show Archive Links" description="Select yes to show a link to the lists archive if the list allows it.">
+	            		<option value="0">_UE_NO</option>
+	            		<option value="1">_UE_YES</option>
+	        		</field>
+	        		<field name="public_view" type="radio" default="0" label="Allow Public View" description="Select yes to allow users to see this tab when viewing other users profiles.">
+	            		<option value="0">_UE_NO</option>
+	            		<option value="1">_UE_YES</option>
+	        		</field>
+	  				<field name="jnews_itemid" type="text" default="" label="jNews Link ItemId" description="If left blank will default to the ItemId for community builder menu link.  This causes links to the list archives to lead to archive pages with the same modules shown when viewing a profile and without the modules that would appear if you followed an jnews menu link.  To correct this enter in the ItemId for the menu link to component - jnews. " />
+				</fieldset>
+			</fields>
+		</config>
+
+	<fields>
+	</fields>
+	</tab>
+    </tabs>
+    <install>
+    	<queries>
+    	</queries>
+    </install>
+    <uninstall>
+        <queries>
+    	</queries>
+    </uninstall>
+</cbinstall>

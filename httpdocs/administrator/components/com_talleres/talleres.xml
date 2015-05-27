@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+    <name>com_talleres</name>
+    <author>Robert Reimi</author>
+    <creationDate>February 2013</creationDate>
+    <copyright>Teravisiontech.com . All rights reserved.
+    </copyright>
+    <license>GNU General Public License version 2 or later
+    </license>
+    <authorEmail>robert.reimi@gmail.com</authorEmail>
+    <authorUrl>www.teravisiontech.com</authorUrl>
+    <version>2.5.0</version>
+    <description>COM_TALLERES_XML_DESCRIPTION</description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <administration>
+        <menu img="" alt="Banda Gastrica Virtual">COM_TALLERES_COMPONENT_TITLE</menu>
+        <submenu>
+            <menu link="option=com_talleres" view="talleres" img="class:" alt="Talleres">COM_TALLERES_SUBMENU_TALLLERES</menu>
+        </submenu>
+        <submenu>
+            <menu link="option=com_talleres" view="inscripciones" img="class:" alt="Inscripciones">COM_TALLERES_SUBMENU_INSCRIPCIONES</menu>
+        </submenu>
+
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>talleres.php</filename>
+        </files>
+
+        <files folder="site">
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>talleres.php</filename>
+        </files>
+    </administration>
+</extension>

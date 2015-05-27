@@ -1,0 +1,96 @@
+
+.m{height: 30px; padding-top: 10px;}
+.m #menu, .m #menu ul, .m #menu li { margin: 0; padding: 0; border: 0 none; }
+
+.m #menu       { position:relative; z-index: 100;}
+.m #menu li    { float:left;  position:relative; list-style: none; display: inline;}
+.m #menu li a  { display:block; white-space: nowrap;  }
+.m #menu li li { /*width: 100%;*/ clear: both;  /*FF 1.0.7 needs this */  }
+.m #menu li ul { visibility: hidden; position:absolute; }
+
+.m #menu li li ul {  top: 0; left: 0; }
+
+.m #menu li.hover ul               {  visibility: visible; }
+.m #menu li.hover ul li ul 		  {  visibility: hidden;  }
+.m #menu li.hover li.hover ul      {  visibility: visible;  left: 100%; }
+
+/* ---- Menu layout -------------------------- */
+
+.m #menu li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+}
+.m #menu li li { border: 0;}
+
+.m #menu ul    { border: 0.1em solid #ccc; background: #f6f6f6 url(../images/bg-menu.gif) repeat-y left;}
+.m #menu ul li.node { background: transparent url(../images/j_arrow.png) no-repeat right 50%; }
+.m #menu ul li.separator { background: #DDE1E6 url(../images/bg-menu.gif);  height: 1px;  }
+
+.m #menu a, .m #menu div {
+	padding: 0.35em 1em 0.35em;
+	margin: 0 1px 0 1px;
+	color: #333333;
+	line-height: 1.6em; vertical-align: middle;
+	font-size: 11px; font-weight: bold; text-decoration: none;
+	cursor: default;
+	background-repeat: no-repeat; background-position: left 50%
+}
+
+.m #menu li.disabled a { color: gray; }
+
+.m #menu ul a {
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 25px;
+	padding-right: 20px;
+	line-height: 1.2em;
+}
+
+/* 1 level - hover */
+.m #menu li.hover a {  background-color: #E7EDDF; border-left: 1px solid #6D9D2E;  border-right:1px solid #6D9D2E; margin: 0; }
+/* 2 level - normal */
+.m #menu li.hover li a { background-color: transparent; border: 0 none;   margin: 2px;  }
+/* 2 level - hover */
+.m #menu li.hover li.hover a { background-color: #E7EDDF; border: 1px solid #6D9D2E;  margin: 1px;   }
+/* 3 level - normal */
+.m #menu li.hover li.hover li a { background-color: transparent; border: 0 none;   margin: 2px;  }
+/* 3 level - hover */
+.m #menu li.hover li.hover li a:hover { background-color: #E7EDDF; border: 1px solid #6D9D2E;  margin: 1px;  }
+
+/* submenu styling */
+.m ul#submenu {
+	list-style-type: none !important;
+	list-style: none !important;
+	margin-left: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.m #submenu li {
+	background: none repeat scroll 0 0 transparent;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.m #submenu li a,
+.m #submenu span.nolink {
+	background: none!important;
+	cursor: pointer;
+	padding: 0px 5px;
+	border-right: 1px solid #ccc;
+	font-weight: bold;
+	color: #0B55C4;
+	line-height: 12px;
+	height: 12px;
+}
+
+.m #submenu span.nolink {
+	color: #999;
+}
+
+.m #submenu a.active,
+.m #submenu span.nolink.active {
+	color: #000;
+	text-decoration: underline;
+}

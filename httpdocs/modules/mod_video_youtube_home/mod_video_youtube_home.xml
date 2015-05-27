@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+ 	<!-- Info -->
+	<name>Video Youtube Module</name>
+	<author>Robert Perez Reimi</author>
+	<creationDate>Junio 2012</creationDate>
+	<copyright>Copyright teravisiontech.com (C) 2012 All rights reserved.
+	</copyright>
+	<license>GPL</license>
+	<authorEmail>robert.reimi@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0</version>
+	<description>Display video in a block
+	</description>
+	<files>
+		<filename module="mod_video_youtube_home">mod_video_youtube_home.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_video_youtube_home.xml</filename>
+	</files>
+	
+	<!-- Backend config parameters -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- Video -->
+				<field  name="youtube_video_url" type="text" required="true" default=""
+					label="Youtube Video Link (with http://)" description="Url of desired youtube video (with http://)">
+				</field>
+				
+				<field  name="more_videos_url" type="text" required="" default=""
+					label="More Videos Url" description="Url to see more videos if apply">
+				</field>
+				
+				<field  name="more_videos_url_label" type="text" required="" default=""
+					label="Url Label" description="Url to see more videos if apply">
+				</field>
+				
+			</fieldset>
+			
+			<!-- Advanced attributes, added joomla defaults -->			
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

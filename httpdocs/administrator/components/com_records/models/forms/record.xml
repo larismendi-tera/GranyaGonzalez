@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+        readonly="true" class="readonly"
+        description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="contact_name" type="text" class="inputbox"
+               size="35" label="COM_RECORDS_FIELD_CONTACT_NAME"
+               description="COM_RECORDS_FIELD_CONTACT_NAME" readonly="true" />
+
+        <field name="contact_email" type="text" class="inputbox"
+               size="35" label="COM_RECORDS_FIELD_CONTACT_EMAIL"
+               description="COM_RECORDS_FIELD_CONTACT_EMAIL" readonly="true" />
+               
+        <field name="contact_phone" type="text" class="inputbox"
+               label="COM_RECORDS_FIELD_CONTACT_PHONE"
+               description="COM_RECORDS_FIELD_CONTACT_PHONE" readonly="true" />
+               
+        <field name="contact_country"
+               type="sql"
+               label="COM_RECORDS_FIELD_CONTACT_COUNTRY"
+               description="COM_CONTACT_CONTACT_COUNTRY_DESC"
+               query="SELECT id, name FROM #__countries"
+               key_field="id" value_field="name"
+               default="" readonly="true">
+        </field>
+               
+        <field name="contact_city" type="text" class="inputbox"
+               label="COM_RECORDS_FIELD_CONTACT_CITY"
+               description="COM_RECORDS_FIELD_CONTACT_CITY" readonly="true" />
+               
+        <field name="contact_skype" type="text" class="inputbox"
+               label="COM_RECORDS_FIELD_CONTACT_SKYPE"
+               description="COM_RECORDS_FIELD_CONTACT_SKYPE" readonly="true" />               
+
+        <field name="contact_subject" type="text" class="inputbox"
+               size="35" label="COM_RECORDS_FIELD_CONTACT_SUBJECT"
+               description="COM_RECORDS_FIELD_CONTACT_SUBJECT" readonly="true" />
+
+        <field name="contact_category" type="list"
+               label="COM_RECORDS_FIELD_CONTACT_CATEGORY"
+               description="COM_RECORDS_FIELD_CONTACT_CATEGORY"
+               class="inputbox"
+               size="1"
+               required="true" readonly="true">
+            <option value="1">COM_RECORDS_FIELD_CATEGORIA1</option>
+            <option value="2">COM_RECORDS_FIELD_CATEGORIA2</option>
+            <option value="3">COM_RECORDS_FIELD_CATEGORIA3</option>
+            <option value="5">COM_RECORDS_FIELD_CATEGORIA5</option>
+            <option value="4">COM_RECORDS_FIELD_CATEGORIA4</option>
+        </field>
+
+        <field name="contact_date" type="calendar" class="inputbox" format="%Y-%m-%d"
+               size="35" label="COM_RECORDS_FIELD_CONTACT_DATE"
+               description="COM_RECORDS_FIELD_CONTACT_DATE" readonly="true" />
+
+        <field name="contact_message" type="hidden" class="inputbox"
+               label="COM_RECORDS_FIELD_CONTACT_MESSAGE"
+               description="COM_RECORDS_FIELD_CONTACT_MESSAGE" readonly="true" />
+
+        <field name="admin_answer" type="textarea" class="inputbox"
+               rows="10" cols="60" label="COM_RECORDS_FIELD_CONTACT_ANSWER"
+               description="COM_RECORDS_FIELD_CONTACT_ANSWER" required="true" />
+
+        <field name="status" type="hidden" default="1"/>
+    </fieldset>
+</form>
