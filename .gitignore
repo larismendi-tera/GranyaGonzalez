@@ -1,2 +1,14 @@
 # ignorar v file
 v
+
+# ignorar .git directory
+.git/
+
+# ignorar .idea directory
+.idea/
+
+# ignorar .settings directory
+.settings
+
+# ignorar .ssh directory
+.ssh

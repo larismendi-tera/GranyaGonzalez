@@ -1,0 +1,116 @@
+div.toolbar table.toolbar a {
+	border:1px solid #FBFBFB;
+	color:#7FA0C1;
+	cursor:pointer;
+	display:block;
+	float:left;
+	padding:1px 2px;
+	white-space:nowrap;
+}
+
+div.toolbar table.toolbar a:hover {
+	border:1px solid #DDDDDD;
+	color:#7FA0C1;
+	text-decoration:none;
+}
+
+
+div.toolbar div.button-text {
+	font-size:1em;
+}
+div.jpng-16-menu-template,div.jpng-16-menu-cancel,div.jpng-16-menu-save,div.jpng-16-menu-sendready,div.jpng-16-menu-new,div.jpng-16-menu-edit,div.jpng-16-menu-update,div.jpng-16-menu-import,
+div.jpng-16-menu-back,div.jpng-16-menu-delete,div.jpng-16-menu-cpanel,div.jpng-16-menu-generate,div.jpng-16-menu-refresh, div.jpng-16-menu-wizard,div.jpng-16-menu-updateOneSub,div.jpng-16-menu-doNew,
+div.jpng-16-menu-tags,div.jpng-16-menu-unpublished,div.jpng-16-menu-published,div.jpng-16-menu-form,div.jpng-16-menu-preview,div.jpng-16-menu-copy,
+div.jpng-16-menu-share {
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	height:16px;
+	width:16px;
+}
+div.jpng-16-menu-template {
+	background-image:url(../images/16/template.png);
+}
+div.jpng-16-menu-cancel {
+	background-image:url(../images/16/cancel.png);
+}
+div.jpng-16-menu-save {
+	background-image:url(../images/16/save.png);
+}
+div.jpng-16-menu-update {
+	background-image:url(../images/16/save.png);
+}
+div.jpng-16-menu-import {
+	background-image:url(../images/16/import.png);
+}
+div.jpng-16-menu-updateOneSub {
+	background-image:url(../images/16/save.png);
+}
+div.jpng-16-menu-doNew {
+	background-image:url(../images/16/save.png);
+}
+div.jpng-16-menu-sendready {
+	background-image:url(../images/16/send.png);
+}
+
+div.jpng-16-menu-new {
+	background-image:url(../images/16/new.png);
+}
+div.jpng-16-menu-edit {
+	background-image:url(../images/16/edit.png);
+}
+
+div.jpng-16-menu-back {
+	background-image:url(../images/16/back.png);
+}
+div.jpng-16-menu-delete {
+	background-image:url(../images/16/delete.png);
+}
+
+div.jpng-16-menu-cpanel {
+	background-image:url(../images/16/cpanel.png);
+}
+div.jpng-16-menu-generate {
+	background-image:url(../images/16/generate.png);
+}
+
+div.jpng-16-menu-refresh {
+	background-image:url(../images/16/refresh.png);
+}
+
+div.jpng-16-menu-share {
+	background-image:url(../images/16/share-1.png);
+}
+
+
+div.jpng-16-menu-wizard {
+	background-image:url(../images/16/wizard.png);
+}
+
+div.jpng-16-menu-tags {
+	background-image:url(../images/16/tag.png);
+}
+
+div.jpng-16-menu-unpublished {
+	background-image:url(../images/16/unpublishT.png);
+}
+
+div.jpng-16-menu-published {
+	background-image:url(../images/16/publishT.png);
+}
+
+div.jpng-16-menu-form {
+	background-image:url(../images/16/createformT.png);
+}
+
+div.jpng-16-menu-preview {
+	background-image:url(../images/16/previewT.png);
+}
+
+div.jpng-16-menu-copy {
+	background-image:url(../images/16/copyT.png);
+}
+
+table.toolbar td.divider {
+	border-right:1px solid #EEEEEE;
+	width:5px;
+}

@@ -1,7 +1,0 @@
-# .htaccess cache expiration for static content here
-#<IfModule mod_expires.c>
-#          <FilesMatch "\.(css)$">
-#                      ExpiresActive On
-#                      ExpiresDefault "access plus 1 week"
-#          </FilesMatch>
-#</IfModule>

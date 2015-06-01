@@ -1,0 +1,100 @@
+/*
+* State.css Styles that are triggered with state changes, form validations, normally triggered by javascript events
+*
+* Usage:
+* - Use for validations, link states and ajax update notifications.
+*/
+
+/* ======= DEFAULT RULES ======= */
+
+/* Form messages */
+
+dd.message.message, dd.warning.message, dd.notice.message {
+    border: 2px solid #ddd;
+    margin-bottom: 1em;
+    padding: 0.8em;
+}
+
+dd.message.message {
+    background: #e6efc2; color: #264409; border-color: #c6d880;
+}
+
+dd.error.message {
+	background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4;
+}
+
+dd.warning.message {
+    background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4;
+}
+
+dd.notice.message {
+    background: #fff6bf; color: #514721; border-color: #ffd324;
+}
+
+dt.warning, dt.message, dt.notice, dt.error {
+    display: none;
+}
+
+
+.error,
+.alert,
+.notice,
+.success,
+.info,
+.warning,
+.message
+{   }
+
+.info          { background: #d5edf8; color: #205791; border-color: #92cae4; }
+.error a, .alert a { color: #8a1f11; }
+.notice a          { color: #514721; }
+.success a         { color: #264409; }
+.info a            { color: #205791; }
+
+/* ======= SITE CUSTOM RULES ======= */
+
+/* Footer Menu */
+
+.joomla-nav-footer li a:hover {
+    font-weight: normal;
+}
+
+.joomla-nav-footer .parent a:hover {
+    font-weight: bold;
+}
+
+.joomla-nav-footer .parent ul a:hover {
+    font-weight: normal;
+}
+
+.inputbox.auto-hint {
+	color: #777;
+}
+
+.italic {
+	font-style: italic;
+}
+
+a[rel='prettyPhoto'] {
+	position: relative;
+}
+
+
+a.button:hover {
+   background-image: none;
+   background-color: #444;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+label.error {
+    background: none repeat scroll 0 0 #FBE3E4;
+    border: 1px solid;
+    color: #8A1F11;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+#mep_0 {
+    background-color: #fff;
+}

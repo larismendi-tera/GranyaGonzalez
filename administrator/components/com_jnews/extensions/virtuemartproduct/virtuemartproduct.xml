@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>VirtueMart Products</name>
+	<author>Joobi Limited</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+	<description>This plugin enables you to insert VirtueMart 2.0 Products inside any jNews Mailings</description>
+	<files>
+		<filename plugin="virtuemartproduct">virtuemartproduct.php</filename>
+	</files>
+
+	<params>
+		<param name="vat" type="radio" default="1" label="Include the VAT to the price" description="Select Yes if you want to add the vat to the displayed price otherwise select No">
+			<option value="0">No VAT</option>
+			<option value="1">Yes, include VAT</option>
+		</param>
+		<param name="description" type="radio" default="short" label="Description" description="Select if you want jNews to display the short description or the full description of the product">
+			<option value="short">Short Description</option>
+			<option value="full">Full Description</option>
+		</param>
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="vat" type="radio" default="1" label="Include the VAT to the price" description="Select Yes if you want to add the vat to the displayed price otherwise select No">
+					<option value="0">No VAT</option>
+					<option value="1">Yes, include VAT</option>
+				</field>
+				<field name="description" type="radio" default="short" label="Description" description="Select if you want jNews to display the short description or the full description of the product">
+					<option value="short">Short Description</option>
+					<option value="full">Full Description</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

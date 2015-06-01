@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="es-es"
+      lang="es-es" dir="ltr">
+	<head>
+        <!-- The following JDOC Head tag loads all the header and meta information from your site config and content. -->
+          <base href="http://www.granyagonzalez.com/index.php" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Granya González</title>
+  <link href="/templates/granya/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="http://www.granyagonzalez.com/component/search/?id=713&amp;format=opensearch" rel="search" title="Buscar Granya González" type="application/opensearchdescription+xml" />
+  <link rel="stylesheet" href="/media/widgetkit/css/widgetkit.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/widgetkit_joomla/assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/media/widgetkit/widgets/lightbox/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="/media/widgetkit/widgets/mediaplayer/mediaelement/mediaelementplayer.css" type="text/css" />
+  <link rel="stylesheet" href="/media/widgetkit/widgets/slideshow/styles/default/style.css" type="text/css" />
+  <link rel="stylesheet" href="/media/widgetkit/widgets/spotlight/css/spotlight.css" type="text/css" />
+  <link rel="stylesheet" href="/media/widgetkit/widgets/twitter/styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sclogin/css/mod_sclogin.css" type="text/css" />
+  <script src="/components/com_jfbconnect/includes/jfbconnect.js?v=421" type="text/javascript"></script>
+  <script src="/media/widgetkit/js/jquery.js" type="text/javascript"></script>
+  <script src="/media/widgetkit/js/jquery.plugins.js" type="text/javascript"></script>
+  <script src="/media/widgetkit/js/responsive.js" type="text/javascript"></script>
+  <script src="/media/widgetkit/widgets/slideshow/js/lazyloader.js" type="text/javascript"></script>
+  <script src="/media/widgetkit/widgets/twitter/twitter.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window["WIDGETKIT_URL"]="/media/widgetkit";
+function wk_ajax_render_url(widgetid){ return "/component/widgetkit/?format=raw&amp;id="+widgetid}
+$widgetkit.load('/media/widgetkit/widgets/lightbox/js/lightbox.js').done(function(){ 
+					jQuery(function($){
+						$('a[data-lightbox]').lightbox({"titlePosition":"float","transitionIn":"fade","transitionOut":"fade","overlayShow":1,"overlayColor":"#777","overlayOpacity":0.7});
+					});
+			});
+if (!window['mejs']) { $widgetkit.load('/media/widgetkit/widgets/mediaplayer/mediaelement/mediaelement-and-player.js').done(function() { jQuery(function($){
+				mejs.MediaElementDefaults.pluginPath='/media/widgetkit/widgets/mediaplayer/mediaelement/'; 
+				$('video,audio').each(function(){
+					var ele = $(this);
+					if (!ele.parent().hasClass('mejs-mediaelement')) {
+						ele.data('mediaelement',new mejs.MediaElementPlayer(this, {"pluginPath":"\/media\/widgetkit\/widgets\/mediaplayer\/mediaelement\/"}));
+
+						var w = ele.data('mediaelement').width, h = ele.data('mediaelement').height;
+
+						$.onMediaQuery('(max-width: 767px)', {
+							valid: function(){
+								ele.data('mediaelement').setPlayerSize('100%', ele.is('video') ? '100%':h);
+							},
+							invalid: function(){
+								var parent_width = ele.parent().width();
+
+								if (w>parent_width) {
+									ele.css({width:'',height:''}).data('mediaelement').setPlayerSize('100%', '100%');
+								} else {
+									ele.css({width:'',height:''}).data('mediaelement').setPlayerSize(w, h);
+								}
+							}
+						});
+
+						if ($(window).width() <= 767) {
+							ele.data('mediaelement').setPlayerSize('100%', ele.is('video') ? '100%':h);
+						}
+					}
+				});
+			}); });} else { jQuery(function($){
+				mejs.MediaElementDefaults.pluginPath='/media/widgetkit/widgets/mediaplayer/mediaelement/'; 
+				$('video,audio').each(function(){
+					var ele = $(this);
+					if (!ele.parent().hasClass('mejs-mediaelement')) {
+						ele.data('mediaelement',new mejs.MediaElementPlayer(this, {"pluginPath":"\/media\/widgetkit\/widgets\/mediaplayer\/mediaelement\/"}));
+
+						var w = ele.data('mediaelement').width, h = ele.data('mediaelement').height;
+
+						$.onMediaQuery('(max-width: 767px)', {
+							valid: function(){
+								ele.data('mediaelement').setPlayerSize('100%', ele.is('video') ? '100%':h);
+							},
+							invalid: function(){
+								var parent_width = ele.parent().width();
+
+								if (w>parent_width) {
+									ele.css({width:'',height:''}).data('mediaelement').setPlayerSize('100%', '100%');
+								} else {
+									ele.css({width:'',height:''}).data('mediaelement').setPlayerSize(w, h);
+								}
+							}
+						});
+
+						if ($(window).width() <= 767) {
+							ele.data('mediaelement').setPlayerSize('100%', ele.is('video') ? '100%':h);
+						}
+					}
+				});
+			});; }
+$widgetkit.load('/media/widgetkit/widgets/spotlight/js/spotlight.js').done(function(){jQuery(function($){ $('[data-spotlight]').spotlight({"duration":300}); });});
+$widgetkit.trans.addDic({"LESS_THAN_A_MINUTE_AGO":"less than a minute ago","ABOUT_A_MINUTE_AGO":"about a minute ago","X_MINUTES_AGO":"%s minutes ago","ABOUT_AN_HOUR_AGO":"about an hour ago","X_HOURS_AGO":"about %s hours ago","ONE_DAY_AGO":"1 day ago","X_DAYS_AGO":"%s days ago"});
+  </script>
+  <script type="text/javascript">jfbc.login.logout_facebook = false;
+jfbc.base = 'http://www.granyagonzalez.com/';
+jfbc.return_url = 'L2luZGV4LnBocD9vcHRpb249Y29tX3RhbGxlcmVzJnZpZXc9cmVmdWVyem8maWQ9NzEz';
+jfbc.login.scope = 'email';
+jfbc.login.show_modal = '0';
+</script>
+  <meta property="og:url" content="http://www.granyagonzalez.com/component/talleres/?view=refuerzo&amp;id=713"/>
+<meta property="og:title" content="Granya González"/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="article" />
+<meta property="fb:app_id" content="139091072929673"/>
+<meta property="og:locale" content="es_ES" />
+  
+  
+  
+  
+
+
+        <!-- Global scripts -->
+        <!-- jdoc:include type="script" /-->
+
+		<!-- The following line loads the template CSS file located in the template folder. -->
+		<link rel="stylesheet" href="/templates/granya/css/base.css" type="text/css" />
+        <link rel="stylesheet" href="/templates/granya/css/layout.css" type="text/css" />
+        <link rel="stylesheet" href="/templates/granya/css/module.css" type="text/css" />
+        <link rel="stylesheet" href="/templates/granya/css/state.css" type="text/css" />
+        <link rel="stylesheet" href="/templates/granya/css/prettyPhoto.css" type="text/css" />
+
+        <script type="text/javascript" src="/templates/granya/js/template.js"></script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4ff7a42a7cc9935f"></script>
+                    <script type="text/javascript" src="/templates/granya/js/jquery.validate.min.js"></script>
+            <script type="text/javascript" src="/templates/granya/js/messages_es.js"></script>
+        <!--        <script type="text/javascript" src="/--><!--/templates/--><!--/js/jquery-1.9.0.min.js"></script>-->
+        <script type="text/javascript" src="/templates/granya/js/jquery.prettyPhoto.js"></script>
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39403348-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+    </head>
+	<body><div id="fb-root"></div>
+<script type="text/javascript">
+
+
+window.fbAsyncInit = function() {
+FB.init({appId: '139091072929673', status: false, cookie: true, xfbml: true, oauth: true, channelUrl: 'http://www.granyagonzalez.com/components/com_jfbconnect/assets/jfbcchannel.php'});
+FB.Event.subscribe('comment.create', jfbc.social.comment.create);
+FB.Event.subscribe('edge.create', jfbc.social.like.create);
+};
+(function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/es_ES/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+
+
+               <header id="header" class="header-container block-container">
+                <div class="site-logo">
+                    <a href="/"><img src="/templates/granya/images/logo.png"/></a>
+                </div>
+                <div class="site-login">
+                    <form action="/" class="form-login" method="post" id="login-form">
+    
+    <fieldset class="input userdata">
+        <p id="form-login-username">
+            <label for="modlgn_username" class="hidden">E-mail</label>
+            <input id="modlgn_username" type="text" name="username" title="E-mail" value="E-mail" class="inputbox" alt="username" size="18" />
+        </p>
+        <p id="form-login-password">
+            <label for="modlgn_passwd" class="hidden">Contrase&ntilde;a</label>
+            <input id="modlgn_passwd" type="password" name="password" placeholder="Contrase&ntilde;a" class="inputbox" size="17"
+                   alt="password"/>
+        </p>
+         <!-- TODO GET SITE TEMPLATE TO NOT HARDCODE GRANYA */ -->
+        <p>
+            <input type="image" alt="Ingresar" src="http://www.granyagonzalez.com//templates/granya/images/btn_ingresar.png" name="Submit" class="button button-login" value="Ingresar"/>
+        </p>
+    <input type="hidden" name="option" value="com_users"/><input type="hidden" name="task" value="user.login"/><input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE="/><input type="hidden" name="3aac90f09852f33b97a03d86e5c5abfe" value="1" />    </fieldset>
+
+<ul class="site-login-links"><li><a href="/component/users/?view=registration">Reg&iacute;strate</a></li><li>|</li><li><a href="/component/users/?view=reset">&iquest;Olvidaste tu contrase&ntilde;a?</a></li><li class="jfbcLogin-container"><div class="jfbcLogin"><fb:login-button v="2" size="medium" scope="email" onlogin="javascript:jfbc.login.on_login();">Ingresar con Facebook</fb:login-button></div></li></ul></form>
+                </div>
+        </header>
+
+
+        <div id="" class="menu-container block-container" >
+                            <div id="" class="menu-box">
+                    <nav>
+<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav-main">
+<li id="current" class="parent item101"><a href="/" >Inicio</a><ul><li class="item121"><a class="hidden" href="#" >DummyLinkHome</a></li></ul></li><li class="parent item102"><a href="#" >Institución</a><ul><li class="item130"><a href="/2013-02-22-20-58-26/mision-y-vision" >Misión y Visión</a></li><li class="item103"><a href="/2013-02-22-20-58-26/quienes-somos" >¿Quiénes Somos?</a></li></ul></li><li class="parent item104"><a href="#" >Servicios</a><ul><li class="item106"><a href="/2013-01-07-15-55-57/tratamientos-corporales" >Tratamientos Corporales</a></li><li class="item107"><a href="/2013-01-07-15-55-57/tratamientos-faciales" >Tratamientos Faciales</a></li><li class="item108"><a href="/2013-01-07-15-55-57/tratamientos-de-relajacion" >Tratamientos de Relajación</a></li><li class="item109"><a href="/2013-01-07-15-55-57/tratamientos-medicos" >Tratamientos Médicos</a></li></ul></li><li class="parent item105"><a href="#" >Banda Gástrica Virtual</a><ul><li class="item110"><a href="/2013-01-07-15-57-05/informacion-y-talleres" >Información y Talleres</a></li><li class="item111"><a href="/2013-01-07-15-57-05/inscripcion" >Inscripción</a></li><li class="item112"><a href="/2013-01-07-15-57-05/testimoniales" >Testimoniales</a></li><li class="item172"><a class="hidden" href="/2013-01-07-15-57-05/nuevo-testimonial" >Testimoniales</a></li><li class="item179"><a class="hidden" href="/2013-01-07-15-57-05/inscripcion-alt" >Inscripción</a></li></ul></li><li class="parent item113"><a href="#" >Publicaciones</a><ul><li class="item114"><a href="/2013-01-07-16-12-15/granya-recomienda" >Granya Recomienda</a></li><li class="item115"><a href="/2013-01-07-16-12-15/articulos-de-prensa" >Artículos de Prensa</a></li><li class="item116"><a href="/2013-01-07-16-12-15/videos" >Videos</a></li></ul></li><li class="parent item117"><a href="/promociones" >Promociones</a><ul><li class="item119"><a class="hidden" href="#" >DummyLink</a></li></ul></li><li class="parent item118"><a href="/contacto" >Contacto</a><ul><li class="item120"><a class="hidden" href="#" >DummyLinkContacto</a></li></ul></li><li class="item178"><a class="hidden" href="/miami" >Información y Talleres - Miami</a></li></ul></nav>
+                                        <div id="search-box" class="search-box">
+                        <form action="/component/talleres/" method="post" class="inline">
+	<div class="search">
+		<input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Buscar..."  onblur="if (this.value=='') this.value='Buscar...';" onfocus="if (this.value=='Buscar...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="0" />
+	</div>
+</form>
+
+                    </div>
+                                    </div>
+                    </div>
+
+                    <div id="" class="breadcrumbs-container block-container">
+                
+<div class="breadcrumbs">
+<a href="/" class="pathway">Inicio</a> <img src="/media/system/images/arrow.png" alt=""  /> <span>Audios</span></div>
+
+            </div>
+        
+        <div id="" class="content-container block-container">
+            <div id="" class="content-panel full ">
+                
+<div id="system-message-container">
+</div>
+                
+<link href="/components/com_talleres/assets/jp/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/components/com_talleres/assets/jp/jquery.jplayer.min.js"></script>
+
+<div class="item-page shadow-container refuerzo">
+
+    <h2 class="article-title shadowed-right">
+        <a>Audios</a>
+    </h2>
+
+        <div id="sm2-container">
+            <!-- SM2 flash movie goes here -->
+        </div>
+
+        <div>
+            <p>Aqu&iacute; usted podr&aacute; escuchar o descargar los audios que apoyan su tratamiento de Banda G&aacute;strica Virtual.</p>
+            <p>Haga Clic sobre el Audio para escuchar desde nuestro sitio y dele PLAY:</p>
+        </div>
+        <ul class="playlist">
+            <li ><a onclick="changeAudio('/audios/dia.mp3')">CD Día Banda Gástrica Virtual</a></li>
+            <li><a onclick="changeAudio('/audios/noche.mp3')">CD Noche Banda Gástrica Virtual</a></li>
+            <li><a onclick="changeAudio('/audios/dia2.mp3')">CD Día Re-Implante Banda Gástrica Virtual</a></li>
+            <li><a onclick="changeAudio('/audios/noche2.mp3')">CD Noche Re-Implante Banda Gástrica Virtual</a></li>
+            <li class="current"><a onclick="changeAudio('/audios/refuerzo3.mp3')">Refuerzo III</a></li>
+                    </ul>
+		        <br>
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio">
+            <div class="jp-type-single">
+    <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+            <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+            <div class="jp-seek-bar">
+                <div class="jp-play-bar"></div>
+            </div>
+        </div>
+        <div class="jp-volume-bar">
+            <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+            <div class="jp-current-time"></div>
+            <div class="jp-duration"></div>
+
+            <ul class="jp-toggles">
+                <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+            </ul>
+        </div>
+    </div>
+<!--    <div class="jp-title">-->
+<!--        <ul>-->
+<!--            <li>Cro Magnon Man</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+    <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    </div>
+</div>        </div>
+        <br>
+
+        <div>
+            <p>Tambi&eacute;n puede descargar los audios y escucharlos en su Ipod, MP3 Player o donde le sea m&aacute;s c&oacute;modo, para descargarlos haga clic en cada audio:</p>
+        </div>
+        <ul class="playlist">
+            <li><a class="exclude" href="/component/talleres/?view=download&file=dia.mp3">CD Día Banda Gástrica Virtual</a></li>
+            <li><a class="exclude" href="/component/talleres/?view=download&file=noche.mp3">CD Noche Banda Gástrica Virtual</a></li>
+            <li><a class="exclude" href="/component/talleres/?view=download&file=dia2.mp3">CD Día Re-Implante Banda Gástrica Virtual</a></li>
+            <li><a class="exclude" href="/component/talleres/?view=download&file=noche2.mp3">CD Noche Re-Implante Banda Gástrica Virtual</a></li>
+        </ul>
+
+        <br>
+
+</div>
+
+<script type="text/javascript">
+
+//<![CDATA[
+jQuery(document).ready(function(){
+
+    jQuery("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+            jQuery(this).jPlayer("setMedia", {
+                                    mp3:"http://www.granyagonzalez.com//component/talleres/?view=media"
+                            });
+        },
+        swfPath: "components/com_talleres/assets/jp",
+        supplied: "mp3",
+        wmode: "window",
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    jQuery(".refuerzo .playlist li").click(function() {
+        jQuery(".refuerzo .playlist li").removeClass('current');
+        jQuery(this).addClass('current');
+    });
+
+});
+//]]>
+
+function changeAudio(file){
+    jQuery('#jquery_jplayer_1').jPlayer("setMedia", {
+        mp3: file
+    });
+}
+
+</script>
+            </div>
+                        <div class="clear"></div>
+        </div>
+
+        <div id="" class="footer-container block-container rounded-container">
+            <div id="" class="footer-box">
+                <nav>
+<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav-footer">
+<li id="current" class="parent item101"><a href="/" >Inicio</a><ul><li class="item121"><a class="hidden" href="#" >DummyLinkHome</a></li></ul></li><li class="parent item102"><a href="#" >Institución</a><ul><li class="item130"><a href="/2013-02-22-20-58-26/mision-y-vision" >Misión y Visión</a></li><li class="item103"><a href="/2013-02-22-20-58-26/quienes-somos" >¿Quiénes Somos?</a></li></ul></li><li class="parent item104"><a href="#" >Servicios</a><ul><li class="item106"><a href="/2013-01-07-15-55-57/tratamientos-corporales" >Tratamientos Corporales</a></li><li class="item107"><a href="/2013-01-07-15-55-57/tratamientos-faciales" >Tratamientos Faciales</a></li><li class="item108"><a href="/2013-01-07-15-55-57/tratamientos-de-relajacion" >Tratamientos de Relajación</a></li><li class="item109"><a href="/2013-01-07-15-55-57/tratamientos-medicos" >Tratamientos Médicos</a></li></ul></li><li class="parent item105"><a href="#" >Banda Gástrica Virtual</a><ul><li class="item110"><a href="/2013-01-07-15-57-05/informacion-y-talleres" >Información y Talleres</a></li><li class="item111"><a href="/2013-01-07-15-57-05/inscripcion" >Inscripción</a></li><li class="item112"><a href="/2013-01-07-15-57-05/testimoniales" >Testimoniales</a></li><li class="item172"><a class="hidden" href="/2013-01-07-15-57-05/nuevo-testimonial" >Testimoniales</a></li><li class="item179"><a class="hidden" href="/2013-01-07-15-57-05/inscripcion-alt" >Inscripción</a></li></ul></li><li class="parent item113"><a href="#" >Publicaciones</a><ul><li class="item114"><a href="/2013-01-07-16-12-15/granya-recomienda" >Granya Recomienda</a></li><li class="item115"><a href="/2013-01-07-16-12-15/articulos-de-prensa" >Artículos de Prensa</a></li><li class="item116"><a href="/2013-01-07-16-12-15/videos" >Videos</a></li></ul></li><li class="parent item117"><a href="/promociones" >Promociones</a><ul><li class="item119"><a class="hidden" href="#" >DummyLink</a></li></ul></li><li class="parent item118"><a href="/contacto" >Contacto</a><ul><li class="item120"><a class="hidden" href="#" >DummyLinkContacto</a></li></ul></li><li class="item178"><a class="hidden" href="/miami" >Información y Talleres - Miami</a></li></ul></nav><p style="text-align: right; margin-top: -20px;">                                                                                                                                                            <a href="http://www.facebook.com/granyagonzalez" target="_blank"><img src="/images/btn_facebook.png" border="0" width="32" height="32" style="border: 0;" /></a> <a href="http://twitter.com/#!/granyagonzalez" target="_blank"><img src="/images/btn_twitter.png" border="0" width="32" height="32" style="border: 0px none;" /></a>       </p>
+<p style="text-align: center; color: white;">Copyright 2013 - Todos los derechos reservados<br />Desarrollado por <a href="http://www.teravisiontech.com">Teravision Technologies</a></p>
+            </div>
+        </div>
+		
+	</body>
+
+
+
+    <script type="text/javascript" charset="utf-8">
+    if (jQuery) {
+        jQuery(document).ready(function(){
+            jQuery(document).ready(function(){
+                jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+                    modal: true,
+                    theme: 'light_rounded', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+                    horizontal_padding: 20, /* The padding on each side of the picture */
+                    social_tools: ''
+                });
+
+
+                //jQuery("input#modlgn_username").val(jQuery("input#modlgn_username").attr('title'));
+    			jQuery("input#modlgn_username").addClass('auto-hint');
+    			
+    	        jQuery("input#modlgn_username").click(function(){
+    	            if(jQuery(this).val() == jQuery(this).attr('title')){
+    	                jQuery(this).val('');
+    	                jQuery(this).removeClass('auto-hint');
+    	            }
+    	        });
+    	        jQuery("input#modlgn_username").focusout(function(){
+    	            if (jQuery(this).val() === ''){
+    	                jQuery(this).val(jQuery(this).attr('title'));
+    	                jQuery(this).addClass('auto-hint');
+    	            }
+    	        });
+
+    	      /*jQuery("input#modlgn_passwd").val(jQuery("input#modlgn_passwd").attr('title'));
+    			jQuery("input#modlgn_passwd").addClass('auto-hint');
+    			
+    	        jQuery("input#modlgn_passwd").click(function(){
+    	            if(jQuery(this).val() == jQuery(this).attr('title')){
+    	                jQuery(this).val('');
+    	                jQuery(this).removeClass('auto-hint');
+    	            }
+    	        });
+    	        jQuery("input#modlgn_passwd").focusout(function(){
+    	            if (jQuery(this).val() === ''){
+    	                jQuery(this).val(jQuery(this).attr('title'));
+    	                jQuery(this).addClass('auto-hint');
+    	            }
+    	            if(jQuery(this).val() == jQuery(this).attr('title')){
+    	            	jQuery(this).val('');
+        	        }
+    	        });*/
+
+                
+            });
+        });
+    };
+    </script>
+</html>

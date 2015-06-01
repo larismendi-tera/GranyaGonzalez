@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Autoreponders">
+  <message>List of available jNews Autoresponders.</message>
+ </layout>
+ 
+  <url>
+   <param name="act" type="text" default="list" label="Action" description=""/>
+   <param name="listype" type="text" default="2" label="List Type" description=""/>
+  </url>
+  
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jnews">
+   <field name="act" type="text" default="list" label="Action" description=""/>
+   <field name="listype" type="text" default="2" label="List Type" description=""/>
+  </fieldset>
+ </fields>
+</metadata>
